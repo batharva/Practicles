@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function convert_c_to_f(){
+            var c=parseInt(f1.n1.value);
+            f=(c*(9/5))+32;
+            f1.n2.value=f;
+        }
+        function convert_f_to_c() {
+            var f=parseInt(f1.n3.value);
+            c=(5/9)*(f-32);
+            f1.n4.value=c;
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        Enter the temp into Celsius: <input type="number" name="n1"><br>
+        Answer the temp into Farenheit: <input type="number" name="n2"><br>
+        <input type="button" name="b1" value="Convert" onclick="convert_c_to_f()">
+        <br><br><br><br>
+        
+        Enter the temp into Farenheit: <input type="number" name="n3"><br>
+        Answer the temp into Celsius: <input type="number" name="n4"><br>
+        <input type="button" name="b2" value="Convert" onclick="convert_f_to_c()">
+    </form>
+</body>
+</html>
