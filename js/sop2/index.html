@@ -1,31 +1,67 @@
+<!-- Using Array -->
+<!-- <html>
+  <head>
+    <title>Document</title>
+    <script>
+      function count() {
+        var string = f1.t1.value;
+        var vowlescount = 0;
+        const vowles = ["a", "e", "i", "o", "u"];
+        for (let a = 0; a <= string.length; a++) {
+          for (let i = 0; i <= string.length; i++) {
+            if (string.charAt(a) == vowles[i]) {
+              vowlescount += 1;
+            }
+          }
+        }
+
+        {
+          alert("Number Of Vowels In String Are" + " " + vowlescount);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="f1">
+      Enter Your Name:<input type="text" name="t1" /><br /><br />
+      <input type="button" value="Calculate" onclick="count()" />
+    </form>
+  </body>
+</html> -->
+
+<!-- Without Using Arrya -->
 
 <html>
-    <head>
-        <title>Document</title>
-        <script>
-            function count(){
-                var string="Maka",vowlescount=0;
-                string=f1.t1.value;
-                const vowles=["a","e","i","o","u"];
-                for (let a = 0; a <=string.length; a++) {
-                    for (let i=0; i <= string.length; i++) {
-                        if (string.charAt(a)==vowles[i]) {
-                            vowlescount+=1;
-                        }
-                    }
-                }
-                
-                {
-                    alert("Number Of Vowels In String Are"+" "+vowlescount);
-                }  
+  <head>
+    <title>Document</title>
+    <script>
+      function count() {
+        var string = f1.t1.value;
+        var vowlescount = 0;
+        for (let a = 0; a <= string.length; a++) {
+          for (let i = 0; i <= string.length; i++) {
+            if (
+              string.charAt(a) == "a" ||
+              string.charAt(a) == "e" ||
+              string.charAt(a) == "i" ||
+              string.charAt(a) == "o" ||
+              string.charAt(a) == "u"
+            ) {
+              vowlescount += 1;
             }
-    
-        </script>
-    </head>
-    <body>
-        <form name="f1">
-            Enter Your Name:<input type="text" name="t1"><br><br>
-            <input type="button" value="Calculate" onclick="count()">
-        </form>
-    </body>
-    </html>
+          }
+        }
+
+        {
+          alert("Number Of Vowels In String Are" + " " + vowlescount);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="f1">
+      Enter Your Name:<input type="text" name="t1" /><br /><br />
+      <input type="button" value="Calculate" onclick="count()" />
+    </form>
+  </body>
+</html>
