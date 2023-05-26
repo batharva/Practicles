@@ -1,32 +1,31 @@
 <html>
-<head>
-    <title>Document</title>
+  <head>
+    <title>Palindorme</title>
     <script>
-        function palindorme(){
-            var string,a=0;
-            string=f1.t1.value;
-            string=string.toLowerCase();
-            for (let i = 0; i <(string.length/2); i++){
-                if (string[i] == string[string.length- (i+1)]) {
-                    a=1;
-                }
-                else{
-                    a=0;
-                }                
-            }
-            if (a==1) {
-                alert(string+" is palindorme");
-            } else {
-                alert(string+" is  not  plindorme");
-            }
+      function palindorme() {
+        var string,
+          a = 0;
+        string = f1.t1.value;
+        string = string.toLowerCase();
+        for (let i = 0; i < string.length / 2; i++) {
+          if (string[i] == string[string.length - (i + 1)]) {
+            a = 1;
+          } else {
+            a = 0;
+          }
         }
-
+        if (a == 1) {
+          alert(string + " is palindorme");
+        } else {
+          alert(string + " is  not  plindorme");
+        }
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <form name="f1">
-        Enter Your Sentence:<input type="text" name="t1"><br><br>
-        <input type="button" value="Check" onclick="palindorme()">
+      Enter Your Sentence:<input type="text" name="t1" /><br /><br />
+      <input type="button" value="Check" onclick="palindorme()" />
     </form>
-</body>
+  </body>
 </html>
