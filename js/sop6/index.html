@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grader</title>
+    <script>
+      function grade() {
+        var marks = t1.value;
+        if (marks >= 35 || marks <= 60) {
+          t2.value = "Grade F";
+        } else if (marks >= 61 || marks <= 70) {
+          t2.value = "Grade D";
+        } else if (marks >= 71 || marks <= 80) {
+          t2.value = "Grade C";
+        } else if (marks >= 81 || marks <= 90) {
+          t2.value = "Grade B";
+        } else if (marks >= 91 || marks <= 100) {
+          t2.value = "Grade A";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Entre Your Marks:
+    <input type="number" name="t1" /><br />
+    Your Grade is
+    <input type="text" name="t2" /><br />
+    <input type="button" value="Calculate" onclick="grade()" />
+  </body>
+</html>
