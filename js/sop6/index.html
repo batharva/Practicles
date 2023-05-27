@@ -9,15 +9,15 @@
       function grade() {
         var marks = t1.value;
         if (marks >= 35 || marks <= 60) {
-          t2.value = "Grade F";
+          document.write("Your Grade is F");
         } else if (marks >= 61 || marks <= 70) {
-          t2.value = "Grade D";
+          document.write("Your Grade is D");
         } else if (marks >= 71 || marks <= 80) {
-          t2.value = "Grade C";
+          document.write("Your Grade is C");
         } else if (marks >= 81 || marks <= 90) {
-          t2.value = "Grade B";
+          document.write("Your Grade is B");
         } else if (marks >= 91 || marks <= 100) {
-          t2.value = "Grade A";
+          document.write("Your Grade is A");
         }
       }
     </script>
@@ -26,7 +26,6 @@
     Entre Your Marks:
     <input type="number" name="t1" /><br />
     Your Grade is
-    <input type="text" name="t2" /><br />
-    <input type="button" value="Calculate" onclick="grade()" />
+    <input type="button" value="Calculate" onclick="grade()" /><br /><br />
   </body>
 </html>
