@@ -7,24 +7,28 @@
     <title>Grader</title>
     <script>
       function grade() {
-        var marks = t1.value;
-        if (marks >= 35 || marks <= 60) {
-          document.write("Your Grade is F");
-        } else if (marks >= 61 || marks <= 70) {
-          document.write("Your Grade is D");
-        } else if (marks >= 71 || marks <= 80) {
-          document.write("Your Grade is C");
-        } else if (marks >= 81 || marks <= 90) {
-          document.write("Your Grade is B");
-        } else if (marks >= 91 || marks <= 100) {
-          document.write("Your Grade is A");
+        var marks = f1.t1.value;
+        if (marks >= 35 && marks <= 60) {
+          f1.t2.value = "F";
+        } else if (marks >= 61 && marks <= 70) {
+          f1.t2.value = "D";
+        } else if (marks >= 71 && marks <= 80) {
+          f1.t2.value = "C";
+        } else if (marks >= 81 && marks <= 90) {
+          f1.t2.value = "B";
+        } else if (marks >= 91 && marks <= 100) {
+          f1.t2.value = "A";
         }
       }
     </script>
   </head>
   <body>
-    Entre Your Marks:
-    <input type="number" name="t1" /><br />
-    <input type="button" value="Calculate" onclick="grade()" /><br /><br />
+    <form name="f1">
+      Entre Your Marks:
+      <input type="number" name="t1" /><br />
+      Your Grade is
+      <input type="text" name="t2" /><br /><br />
+      <input type="button" value="Calculate" onclick="grade()" /><br /><br />
+    </form>
   </body>
 </html>
