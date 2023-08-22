@@ -1,2 +1,2 @@
 # Practicles
-Link : batharva.github.io/Practicles/
+Link : https://batharva.github.io/Practicles/
